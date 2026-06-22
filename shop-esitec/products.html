@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopESITEC — Nos produits</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">Shop<span>ESITEC</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="products.html" class="active">Produits</a></li>
+          <li><a href="cart.html">Panier <span id="cart-count" class="cart-badge">0</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Nos produits</h1>
+      <p>Parcourez notre catalogue complet</p>
+    </div>
+  </section>
+
+  <section class="container catalog">
+    <div class="catalog-toolbar">
+      <label for="category-filter">Filtrer par catégorie :</label>
+      <select id="category-filter">
+        <option value="all">Toutes</option>
+        <option value="ordinateur">Ordinateurs</option>
+        <option value="telephone">Téléphones</option>
+        <option value="accessoire">Accessoires</option>
+      </select>
+    </div>
+    <div id="all-products" class="product-grid">
+      <!-- Rempli dynamiquement par js/products.js -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 ShopESITEC — Projet pédagogique. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

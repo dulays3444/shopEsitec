@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopESITEC — Boutique en ligne</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">Shop<span>ESITEC</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Accueil</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="cart.html">Panier <span id="cart-count" class="cart-badge">0</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <h1>La technologie à portée de clic</h1>
+      <p>Découvrez notre sélection de produits high-tech au meilleur prix.</p>
+      <a href="products.html" class="btn btn-primary">Voir les produits</a>
+    </div>
+  </section>
+
+  <section class="features container">
+    <div class="feature-card">
+      <div class="feature-icon">🚚</div>
+      <h3>Livraison rapide</h3>
+      <p>Livraison en 48h partout au Sénégal.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">🔒</div>
+      <h3>Paiement sécurisé</h3>
+      <p>Vos transactions sont protégées.</p>
+    </div>
+    <div class="feature-card">
+      <div class="feature-icon">↩️</div>
+      <h3>Retour gratuit</h3>
+      <p>30 jours pour changer d'avis.</p>
+    </div>
+  </section>
+
+  <section class="featured container">
+    <h2 class="section-title">Produits populaires</h2>
+    <div id="featured-products" class="product-grid">
+      <!-- Rempli dynamiquement par js/products.js -->
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 ShopESITEC — Projet pédagogique. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

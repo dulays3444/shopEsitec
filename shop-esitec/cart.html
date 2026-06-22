@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ShopESITEC — Mon panier</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="index.html" class="logo">Shop<span>ESITEC</span></a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="products.html">Produits</a></li>
+          <li><a href="cart.html" class="active">Panier <span id="cart-count" class="cart-badge">0</span></a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-banner">
+    <div class="container">
+      <h1>Mon panier</h1>
+      <p>Vérifiez vos articles avant de commander</p>
+    </div>
+  </section>
+
+  <section class="container cart-section">
+    <div id="cart-items" class="cart-items">
+      <!-- Rempli dynamiquement par js/cart.js -->
+    </div>
+    <div class="cart-summary">
+      <h3>Récapitulatif</h3>
+      <div class="summary-line">
+        <span>Total articles :</span>
+        <span id="cart-total-items">0</span>
+      </div>
+      <div class="summary-line total">
+        <span>Total à payer :</span>
+        <span id="cart-total-price">0 FCFA</span>
+      </div>
+      <button id="checkout-btn" class="btn btn-primary">Passer la commande</button>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 ShopESITEC — Projet pédagogique. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <script src="js/products.js"></script>
+  <script src="js/cart.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
