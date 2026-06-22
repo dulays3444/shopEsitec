@@ -12,6 +12,7 @@ const PRODUCTS = [
   { id: 6, name: "Tablette tactile 11''", category: "telephone", price: 220000, icon: "📲", featured: false },
   { id: 7, name: "Souris ergonomique", category: "accessoire", price: 18000, icon: "🖱️", featured: false },
   { id: 8, name: "PC Gamer RTX", category: "ordinateur", price: 850000, icon: "🖥️", featured: false },
+  { id: 9, name: "Airpods Max", category: "Casque sans fil", price: 400000, icon: "🎧", featured: false },
 ];
 
 // Formater un prix en FCFA
